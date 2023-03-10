@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo programação</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: rgb(73, 42, 165);
+        }
+
+        h1{
+            font-size: 3em;
+        }
+
+        h1, p{
+            color: white;
+            text-align: center;
+            margin: 10px 0px;
+        }
+
+        p{
+            margin: 20px;
+        }
+
+        p:hover > span{
+            display: block;
+        }
+
+        span{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Iniciando um curso de programação em javascript <span>Eu quero ser bem sucedido</span></p>
+    <script>
+
+    // Number.parseFloat == numeros reais (1.5 2.5 3.5 4.5 5.5)
+    // Number.parseInt == numeros inteiros (1 2 3 4 5)
+    // Number == o javascript decide se o numero é inteiro ou real
+
+    var n1 = Number(window.prompt('Digite um numero'))
+    var n2 = Number(window.prompt('Digite outro numero'))
+    var result = n1 + n2
+
+    //window.alert('A soma dos valores é ' + String(result))
+
+    window.alert(`A soma entre o valor ${n1} e ${n2} é igual a ${result}`)
+    /*
+    Number + Number == Adição
+    Number - Number == Subtração
+    Number * Number == Multiplicação
+    Number / Number == Divisão real
+    Number % Number == Divisão Inteira
+    Number ** Number == Ao Quadrado
+    */
+    // String + String == Concatenação
+    </script>
+</body>
+</html>
