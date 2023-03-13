@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: brown;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-size: 3em;
+        }
+
+        p{
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <main>
+        <p></p>
+    </main>
+</body>
+<script>
+    var nome = window.prompt('Qual seu nome?')
+    var idade = window.prompt('Qual sua idade')
+    var mudei = window.document.getElementsByTagName('h1')[0]
+    mudei.innerText = 'Oi tudo bem ' + nome + '?'
+    var idad = window.document.getElementsByTagName('p')[0]
+    idad.innerText = 'Então vc tem ' + idade + ' anos.'
+    
+</script>
+</html>
